@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>注册</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+        background-image: url(img/130F1134412-11.jpg);
+    }
+
+    #card1 {
+        filter: alpha(Opacity=80);
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+        margin-top: 20%;
+    }
+
+    .card {
+        width: 30%;
+        height: 500px;
+
+        position: absolute;
+        top: 35%;
+        left: 35%;
+
+    }
+
+    .card input {
+
+        width: 80%;
+    }
+
+    #codebuttno {
+
+        width: 120px;
+        height: 50px;
+        background-color:
+                #6495ED;
+        border: 0;
+        border-radius: 5px;
+        color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 47%;
+    }
+
+    #codebuttno.on {
+        width: 150px;
+        background-color: #eee;
+        color: #ccc;
+        cursor: not-allowed;
+    }
+</style>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">关于</a></li>
+                <li class="nav-item"><a href="room.html" class="nav-link">房间查看</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">个人中心</a></li>
+                <li class="nav-item"><a href="yd.html" class="nav-link">订票</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">优惠</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">登陆/</a></li>
+                <li class="nav-item"><a href="user.html" class="nav-link" style="margin-left: -40px">加入</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END nav -->
+<div id="dis1" style="height: 900px;width: 100%;">
+    <div class="card">
+        <form id="empForm">
+            <p>
+            <h3 style="text-align: center;">注册账号</h3>
+            </p>
+            <div class="form-group ml-5">
+                <label for="">账号：</label>
+                <input type="text" class="form-control" name="clientAccount" id="clientAccount"
+                       aria-describedby="helpId" placeholder=""><span id="msg8"></span>
+
+            </div>
+            <div class="form-group ml-5">
+                <label for="">密码：</label>
+                <input type="password" class="form-control" name="clientPwd" id="clientPwd"
+                       aria-describedby="helpId" placeholder="">
+
+            </div>
+            <div class="form-group ml-5">
+                <label for="">确认密码：</label>
+                <input type="password" class="form-control" name="sure-input-pwd" id="sure-input-pwd"
+                       aria-describedby="helpId" placeholder="">
+
+            </div>
+            <button type="button" name="" id="button-log" class="btn btn-primary btn-lg btn-block"
+                    style="width: 50%;margin-left: 20%">注册</button>
+            <div><span id="msg1" style="margin-left: 400px;margin-top:-100px;"></span></div>
+        </form>
+        <p style="width: 50%;margin-left: 50%;margin-top: 1%"><a href="#" id="sss">短信验证码注册</a> <a href="#">去登陆</a>
+        </p>
+    </div>
+
+
+</div>
+
+<div id="dis2" style="height: 900px;width: 100%;">
+    <div class="card">
+        <form id="empForm1">
+            <p>
+            <h3 style="text-align: center;">短信注册</h3>
+            </p>
+            <div class="form-group ml-5">
+                <label for="">手机号：</label>
+                <input type="text" class="form-control" name="clientPhone" id="clientPhone"
+                       aria-describedby="helpId" placeholder="">
+                <span id="msg9"></span>
+
+            </div>
+            <div class="form-group ml-5">
+                <label for="">验证码：</label>
+                <input type="text" class="form-control" name="" id="code" aria-describedby="helpId" placeholder=""
+                       style="width:40% ">
+                <div>
+                    <input type="button" id="codebuttno" value="获取验证码">
+
+                </div>
+            </div>
+
+            <button type="button" name="" id="button-log1" class="btn btn-success btn-lg btn-block"
+                    style="width: 50%;margin-left: 20%">注册</button><span id="msg2"
+                                                                         style="margin-left: 400px;margin-top:-100px;"></span>
+            <p style="width: 50%;margin-left: 50%;margin-top: 1%"><a href="#" id="sss1">账户密码注册</a> <a
+                    href="#">去登陆</a>
+            </p>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+
+
+<footer class="ftco-footer ftco-bg-dark ftco-section mt-3">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">社交</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live the blind texts.</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                        <li class="ftco-animate"><a href="#"><span class="icon-weibo"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-qq"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-weixin"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">营业时间</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="py-2 d-block">星期一: <span>08: - 22:00</span></a></li>
+                        <li><a href="#" class="py-2 d-block">星期二: <span>08: - 22:00</span></a></li>
+                        <li><a href="#" class="py-2 d-block">星期三: <span>08: - 22:00</span></a></li>
+                        <li><a href="#" class="py-2 d-block">星期四: <span>08: - 22:00</span></a></li>
+                        <li><a href="#" class="py-2 d-block">星期五: <span>08: - 22:00</span></a></li>
+                        <li><a href="#" class="py-2 d-block">星期六: <span>08: - 22:00</span></a></li>
+                        <li><a href="#" class="py-2 d-block">星期天: <span>08: - 22:00</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">联系方式</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a>
+                        </li>
+                        <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
+                        <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
+                        <li><a href="#" class="py-2 d-block">email@email.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">地址</h2>
+                    <p>远离山脉，远离国家。</p>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group">
+                            <span class="icon icon-paper-plane"></span>
+                            <input type="text" class="form-control" placeholder="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                    is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                                                                     target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/2.4/layer.js"></script>
+<script type="text/javascript" src="js/user.js"></script>
+
+</body>
+
+</html>

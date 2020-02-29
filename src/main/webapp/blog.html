@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>个人中心</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+  <link
+          href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700"
+          rel="stylesheet">
+  <link
+          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700"
+          rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style type="text/css">
+  li:hover {
+    color: #EA0000;
+    font-size: 20px;
+  }
+</style>
+<style>
+  .nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 3em;
+    border: bisque solid 1px;
+    margin-left: 5%;
+  }
+
+  .nav a {
+    color: black;
+    display: block;
+    width: 10em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .nav a:hover {
+    background-color: #E6E6FA;
+    color: red;
+  }
+
+  .nav {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  #dis1 {
+    width: 55%;
+    height: 580px;
+    position: absolute;
+    left: 30%;
+    top: 110px;
+    padding-left: 60px;
+    color: black;
+    margin:0 auto;
+  }
+
+  #dis1 #dis11 {
+    color: black;
+  }
+
+  #dis1p {
+    font-weight: 600;
+  }
+
+  #a4 {
+    position: absolute;
+    left: 10%;
+    top: 80px;
+    width: 50%;
+    height: 350px;
+    margin-left: 5px;
+  }
+
+
+
+  #dis1 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+  }
+</style>
+
+<body style="background: url(images/bg_2.jpg)">
+
+<div>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light bg-info">
+    <h1 style="margin-left: 5%;">个人中心</h1>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0"
+          style="margin-left: 100px;" id="ul1">
+        <li class="nav-item active"><a href="index.html"
+                                       class="nav-link">首页</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">关于</a></li>
+        <li class="nav-item"><a href="room.html" class="nav-link">房间查看</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">个人中心</a></li>
+        <li class="nav-item"><a href="yd.html" class="nav-link">订票</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">优惠</a></li>
+      </ul>
+      <div style="margin-right: 100px;">
+        <span>欢迎用户：</span><span id="userN" style="color: #EA0000;font-size: 20px;"> zs</span>
+      </div>
+      <a href="#" style="color: #00CACA;">退出登录</a>
+    </div>
+  </nav>
+</div>
+
+<div class="nav">
+  <ul style="background-color: #FFDCB9">
+    <h5 style="text-align: center; margin-top: 5px; color: black;">
+      <b>信息管理</b>
+    </h5>
+    <li><a href="blog.html"  style="color: #00CACA">详细信息</a></li>
+    <li><a href="#" onclick="query(2)" style="color: #00CACA">完善信息</a></li>
+    <li><a href="#" onclick="query(3)" style="color: #00CACA">个人信息修改</a></li>
+    <h5 style="text-align: center; color: black;">
+      <b>会员管理</b>
+    </h5>
+
+    <li><a href="member.html" onclick="" style="color: #00CACA">会员等级查看</a></li>
+    <li><a href="#" onclick="query(5)" style="color: #00CACA">积分查询</a></li>
+    <li><a href="#" onclick="query(6)" style="color: #00CACA">积分与会员咨询</a></li>
+    <h5 style="text-align: center; color: black;">
+      <b>账号管理</b>
+    </h5>
+    <li><a href="#" style="color: #00CACA">账号/密码</a></li>
+    <h5 style="text-align: center; color: black;">
+      <b>订单管理</b>
+    </h5>
+    <li><a href="#" style="color: #00CACA">订单查看</a></li>
+    <li><a href="#" style="color: #00CACA">订单退款进度</a></li>
+  </ul>
+
+</div>
+<div id="dis1" class="card bg-info  text-white">
+  <div id="dis11">
+    <h1>
+      <b>详细信息</b>
+    </h1>
+  </div>
+
+  <div id="a4" style="">
+    <div id="dis111">
+      <p id="dis1p">
+        姓名:<span>zs</span>
+      </p>
+    </div>
+    <div id="dis111">
+      <p id="dis1p">
+        性别:<span>男</span>
+      </p>
+    </div>
+    <div id="dis111">
+      <p id="dis1p">
+        年龄:<span>28</span>
+      </p>
+    </div>
+    <div id="dis111">
+      <p id="dis1p">
+        电话号码:<span>13899012228</span>
+      </p>
+    </div>
+    <div id="dis111">
+      <p id="dis1p">
+        电子邮件:<span>1222228@.com</span>
+      </p>
+    </div>
+    <div id="dis111">
+      <p id="dis1p">
+        昵称:<span>Currstp</span>
+      </p>
+    </div>
+    <div id="dis111">
+      <p id="dis1p">
+        账号:<span>78889Currstp</span>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">社交</h2>
+          <p>Far far away, behind the word mountains, far from the
+            countries Vokalia and Consonantia, there live the blind texts.</p>
+          <ul
+                  class="ftco-footer-social list-unstyled float-md-left float-lft">
+            <li class="ftco-animate"><a href="#"><span
+                    class="icon-weibo"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span
+                    class="icon-qq"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span
+                    class="icon-weixin"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">营业时间</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block">星期一: <span>08:
+										- 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期二: <span>08:
+										- 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期三: <span>08:
+										- 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期四: <span>08:
+										- 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期五: <span>08:
+										- 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期六: <span>08:
+										- 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期天: <span>08:
+										- 22:00</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">联系方式</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block">198 West 21th
+              Street, Suite 721 New York NY 10016</a></li>
+            <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
+            <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
+            <li><a href="#" class="py-2 d-block">email@email.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">地址</h2>
+          <p>远离山脉，远离国家。</p>
+          <form action="#" class="subscribe-form">
+            <div class="form-group">
+              <span class="icon icon-paper-plane"></span> <input type="text"
+                                                                 class="form-control" placeholder="Subscribe">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>
+              document.write(new Date().getFullYear());
+          </script>
+          All rights reserved | This template is made with <i
+                class="icon-heart" aria-hidden="true"></i> by <a
+                href="https://colorlib.com" target="_blank">Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script>
+
+
+    function query(obj) {
+        console.log('传过来的值：',obj);
+
+        for (var i = 1;i<10; i++) {
+            if (i == obj) {
+                //	$("#dis"+i).show();
+
+                if(i==2){
+                    $("#dis1").empty();
+                    var d2=`
+
+						<div id="dis11" style="margin:0 auto;">
+							<h1>
+							<b>完善个人信息</b>
+						</h1>
+					</div>
+                    <input type="text" required="required" placeholder="请输入用户名"
+                        pattern="[A-Za-z0-9]{6,10}" style="width:380px; height: 40px; margin-left: 145px;">
+
+                </div>
+                </br>
+
+
+                    <input type="text" required="required"
+                        pattern="[\u4e00-\u9fa5]{2,}" placeholder="请输入真实姓名" style="width:380px; height: 40px;margin-left: 145px;">
+                        </br>
+                    <input type="text"  required="required" pattern="1[34578]\d{9}$"
+                        placeholder="请输入手机号码" style="width:380px; height: 40px; margin-left: 145px;">
+                        </br>
+                    <input type="email"  required="required" placeholder="输入邮箱" style="width:380px; height: 40px; margin-left: 145px;">
+                    </br>
+                    <input type="email" required="required" placeholder="请输入身份证号码" style="width:380px; height: 40px; margin-left: 145px;">
+                    </br>
+
+                    <input type="email" id=""  required="required" placeholder="请输入出生日期"style="width:380px; height: 40px; margin-left: 145px;">
+              </br>
+              <button class="btn btn-primary" type="submit" style="width:400px;margin-left: 140px;">确定添加</button>
+</br>
+                <button class="btn btn-success" type="button" style="width:260px; margin-left: 195px;">取消</button>
+
+                `
+
+                    $("#dis1").append(d2)
+                }
+
+                if(i==3){
+                    $("#dis1").empty();
+                    var d3=`
+
+						<div id="dis11" style="margin:0 auto;">
+							<h1>
+							<b>个人信息修改</b>
+						</h1>
+					</div>
+                    <input type="text" required="required" placeholder="请输入用户名"
+                        pattern="[A-Za-z0-9]{6,10}" style="width:380px; height: 40px; margin-left: 145px;">
+
+                </div>
+                </br>
+
+
+                    <input type="text" required="required"
+                        pattern="[\u4e00-\u9fa5]{2,}" placeholder="请输入真实姓名" style="width:380px; height: 40px;margin-left: 145px;">
+                        </br>
+                    <input type="text"  required="required" pattern="1[34578]\d{9}$"
+                        placeholder="请输入手机号码" style="width:380px; height: 40px; margin-left: 145px;">
+                        </br>
+                    <input type="email"  required="required" placeholder="输入邮箱" style="width:380px; height: 40px; margin-left: 145px;">
+                    </br>
+                    <input type="email" required="required" placeholder="请输入身份证号码" style="width:380px; height: 40px; margin-left: 145px;">
+                    </br>
+
+                    <input type="email" id=""  required="required" placeholder="请输入密码"style="width:380px; height: 40px; margin-left: 145px;">
+              </br>
+              <button class="btn btn-primary" type="submit" style="width:400px;margin-left: 140px;">提交</button>
+</br>
+                <button class="btn btn-success" type="button" style="width:260px; margin-left: 195px;">取消</button>
+
+                `
+
+                    $("#dis1").append(d3)
+                }
+
+
+            }
+        }
+
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+#codebuttno {
+
+      width: 120px;
+      height: 50px;
+      background-color:
+              #6495ED;
+      border: 0;
+      border-radius: 5px;
+      color: #fff;
+      position: absolute;
+      top: 135px;
+      left: 47%;
+    }
+
+    #codebuttno.on {
+      width: 150px;
+      background-color: #eee;
+      color: #ccc;
+      cursor: not-allowed;
+    }

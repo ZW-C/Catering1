@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cozy - Free Bootstrap 4 Template by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a href="index.html" class="nav-link">首页</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">关于</a></li>
+        <li class="nav-item"><a href="room.html" class="nav-link">房间查看</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">个人中心</a></li>
+        <li class="nav-item"><a href="yd.html" class="nav-link">订票</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">优惠</a></li>
+      </ul>
+
+
+    </div>
+
+
+    <div id="username1"><span id="username"></span><a name="" id="" class="btn" href="#" role="button"
+                                                      onclick="delsession();">注销</a> </div>
+  </div>
+</nav>
+<!-- END nav -->
+
+<section class="home-slider owl-carousel">
+  <div class="slider-item" style="background-image: url('images/bg_1.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-start">
+        <div class="col-md-6 col-sm-12 ftco-animate">
+          <h1 class="mb-4">欢迎来到靠近蓝海的舒适海滩</h1>
+          <p><a href="https://vimeo.com/45830194"
+                class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span
+                  class="ion-ios-play mr-2"></span>观看视频</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-item" style="background-image: url('images/bg_2.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-start">
+        <div class="col-md-6 col-sm-12 ftco-animate">
+          <h1 class="mb-4">预订最完美的住宿而不花大价钱</h1>
+          <p><a href="https://vimeo.com/45830194"
+                class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span>
+            观看视频</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-item" style="background-image: url('images/bg_3.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-start">
+        <div class="col-md-6 col-sm-12 ftco-animate">
+          <h1 class="mb-4">让我们去探索</h1>
+          <p><a href="https://vimeo.com/45830194"
+                class="btn btn-primary btn-outline-white px-4 py-3 popup-vimeo"><span class="ion-ios-play mr-2"></span>
+            观看视频</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END slider -->
+
+<div class="ftco-section-reservation">
+  <!--账号登陆-->
+  <div class="container" id="cont">
+    <div class="row justify-content-end ftco-animate">
+      <div class="col-lg-4 col-md-5 reservation p-md-5">
+        <div class="block-17">
+          <form action="" method="post" class="d-block" id="empForm1">
+            <div class="fields d-block">
+
+              <div class="book-date one-third">
+                <label for="check-in">账号:</label>
+                <input type="text" id="clientAccount" class="form-control">
+                <span id="span1"></span>
+              </div>
+
+              <div class="book-date one-third">
+                <label for="check-out">密码:</label>
+                <input type="password" id="clientPwd" class="form-control">
+
+              </div>
+
+
+            </div>
+            <input type="button" id="button-login" class="search-submit btn btn-primary mt-3" value="登陆">
+            <div class="mt-1">
+              <input id="remember_password" type="checkbox" /><span>记住密码</span>
+              <a name="" id="aaa" class="" href="#" role="button" style="margin-left: 30%"
+                 onclick="dxdl();">手机号码登陆</a>
+            </div>
+
+            <div id="div1" class="mt-3" style="margin-left: 50%;margin-bottom: -10%"> <a href="user.html"
+                                                                                         style="color: black">注册账号</a>
+              <a href="#" style="color: black" class="">忘记密码</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" id="cont2">
+    <div class="row justify-content-end ftco-animate">
+      <div class="col-lg-4 col-md-5 reservation p-md-5">
+        <div class="block-17">
+          <form action="" method="post" class="d-block" id="empForm2">
+            <div class="fields d-block">
+
+              <div class="book-date one-third">
+                <label for="check-in">手机号码:</label>
+                <input type="text" id="clientPhone" class="form-control">
+                <span id="span3"></span>
+              </div>
+
+              <div class="book-date one-third" >
+                <label for="check-out">验证码:</label>
+                <input type="text" id="code" class="form-control" style="width:100px;">
+                <div>
+
+                  <input type="button" id="codebuttno" value="获取验证码">
+                </div>
+              </div>
+
+
+            </div>
+            <input type="button" id="button-login2" class="search-submit btn btn-primary mt-3" value="登陆">
+            <div class="mt-1">
+
+              <a name="" id="aaa" class="" href="#" role="button" style="margin-left: 30%"
+                 onclick="accountLogin111()">账号登陆</a>
+            </div>
+
+            <div id="div1" class="mt-3" style="margin-left: 50%;margin-bottom: -10%"> <a href="user.html"
+                                                                                         style="color: black">注册账号</a>
+              <a href="#" style="color: black" class="">忘记密码</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<section class="services bg-light">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-4 ftco-animate py-5 nav-link-wrap aside-stretch">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link px-4 active" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-master" role="tab"
+             aria-controls="v-pills-master" aria-selected="true"><span class="mr-3 flaticon-bed"></span> 主卧室</a>
+
+          <a class="nav-link px-4" id="v-pills-buffet-tab" data-toggle="pill" href="#v-pills-buffet" role="tab"
+             aria-controls="v-pills-buffet" aria-selected="false"><span class="mr-3 flaticon-tray"></span> 自助早餐</a>
+
+          <a class="nav-link px-4" id="v-pills-fitness-tab" data-toggle="pill" href="#v-pills-fitness" role="tab"
+             aria-controls="v-pills-fitness" aria-selected="false"><span class="mr-3 flaticon-woman"></span> 健身中心</a>
+
+          <a class="nav-link px-4" id="v-pills-reception-tab" data-toggle="pill" href="#v-pills-reception" role="tab"
+             aria-controls="v-pills-reception" aria-selected="false"><span class="mr-3 flaticon-receptionist"></span>
+            24小时接待</a>
+
+          <a class="nav-link px-4" id="v-pills-sea-tab" data-toggle="pill" href="#v-pills-sea" role="tab"
+             aria-controls="v-pills-sea" aria-selected="false"><span class="mr-3 flaticon-deck-chair"></span> 海景阳台</a>
+
+          <a class="nav-link px-4" id="v-pills-spa-tab" data-toggle="pill" href="#v-pills-spa" role="tab"
+             aria-controls="v-pills-spa" aria-selected="false"><span class="mr-3 flaticon-spa"></span> 泳池 & 水疗中心</a>
+
+          <a class="nav-link px-4" id="v-pills-wifi-tab" data-toggle="pill" href="#v-pills-wifi" role="tab"
+             aria-controls="v-pills-wifi" aria-selected="false"><span class="mr-3 flaticon-wifi-router"></span>
+            免费WiFi</a>
+
+          <a class="nav-link px-4" id="v-pills-resto-tab" data-toggle="pill" href="#v-pills-resto" role="tab"
+             aria-controls="v-pills-resto" aria-selected="false"><span class="mr-3 flaticon-disco-ball"></span> 餐厅 &
+            酒吧</a>
+        </div>
+      </div>
+      <div class="col-md-8 ftco-animate p-4 p-md-5 d-flex align-items-center">
+
+        <div class="tab-content pl-md-5" id="v-pills-tabContent">
+
+          <div class="tab-pane fade show active" id="v-pills-master" role="tabpanel"
+               aria-labelledby="v-pills-master-tab">
+            <span class="icon mb-3 d-block flaticon-bed"></span>
+            <h2 class="mb-4">主卧室</h2>
+            <p class="lead">我爱你，我爱你，我爱你，我爱你。这是我们必须做的事</p>
+            <p>如果我的父亲在你的身边有个亡命之人，我会为他找个更好的住处。你的工作时间越短，你的时间就越短。</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-buffet" role="tabpanel" aria-labelledby="v-pills-buffet-tab">
+            <span class="icon mb-3 d-block flaticon-tray"></span>
+            <h2 class="mb-4">自助早餐</h2>
+            <p class="lead">我爱你，我爱你，我爱你，我爱你。这是我们必须做的事</p>
+            <p>如果我的父亲在你的身边有个亡命之人，我会为他找个更好的住处。你的工作时间越短，你的时间就越短。</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-fitness" role="tabpanel" aria-labelledby="v-pills-fitness-tab">
+            <span class="icon mb-3 d-block flaticon-woman"></span>
+            <h2 class="mb-4">健身中心</h2>
+            <p class="lead">我爱你，我爱你，我爱你，我爱你。这是我们必须做的事</p>
+            <p>如果我的父亲在你的身边有个亡命之人，我会为他找个更好的住处。你的工作时间越短，你的时间就越短。</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-reception" role="tabpanel" aria-labelledby="v-pills-reception-tab">
+            <span class="icon mb-3 d-block flaticon-receptionist"></span>
+            <h2 class="mb-4">24小时接待</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam
+              sunt iste dolores consequatur</p>
+            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+              nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+              tempore et quam natus quaerat doloremque.</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-sea" role="tabpanel" aria-labelledby="v-pills-sea-tab">
+            <span class="icon mb-3 d-block flaticon-deck-chair"></span>
+            <h2 class="mb-4">海景阳台</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam
+              sunt iste dolores consequatur</p>
+            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+              nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+              tempore et quam natus quaerat doloremque.</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-spa" role="tabpanel" aria-labelledby="v-pills-spa-tab">
+            <span class="icon mb-3 d-block flaticon-spa"></span>
+            <h2 class="mb-4">泳池 &amp; 水疗中心</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam
+              sunt iste dolores consequatur</p>
+            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+              nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+              tempore et quam natus quaerat doloremque.</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-wifi" role="tabpanel" aria-labelledby="v-pills-wifi-tab">
+            <span class="icon mb-3 d-block flaticon-wifi-router"></span>
+            <h2 class="mb-4">免费WiFi</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam
+              sunt iste dolores consequatur</p>
+            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+              nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+              tempore et quam natus quaerat doloremque.</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-resto" role="tabpanel" aria-labelledby="v-pills-resto-tab">
+            <span class="icon mb-3 d-block flaticon-wifi-dico-ball"></span>
+            <h2 class="mb-4">餐厅 &amp; 酒吧</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam
+              sunt iste dolores consequatur</p>
+            <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis
+              nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea,
+              tempore et quam natus quaerat doloremque.</p>
+            <p><a href="#" class="btn btn-primary">了解更多</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section room-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <span class="subheading">我们的房间</span>
+        <h2>探索我们的房间</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 ftco-animate">
+        <div class="carousel-room owl-carousel">
+          <div class="item">
+            <div class="room-wrap">
+              <a href="#" class="room-img" style="background-image: url(images/room-1.jpg);"></a>
+              <div class="text p-4">
+                <div class="d-flex mb-1">
+                  <div class="one-third">
+                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star-half-full"></span></p>
+                    <h3><a href="#">高级双人房</a></h3>
+                  </div>
+                  <div class="one-forth text-center">
+                    <p class="price">$99 <br><span>/晚</span></p>
+                  </div>
+                </div>
+                <p class="features">
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 最适合旅行情侣</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 早餐包含在内</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 2张双人床</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 婴儿托管设施</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 免费WiFi</span>
+                </p>
+                <p><a href="yd.html" class="btn btn-primary">预订房间</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="room-wrap">
+              <a href="#" class="room-img" style="background-image: url(images/room-2.jpg);"></a>
+              <div class="text p-4">
+                <div class="d-flex mb-1">
+                  <div class="one-third">
+                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star-half-full"></span></p>
+                    <h3><a href="#">家庭房</a></h3>
+                  </div>
+                  <div class="one-forth text-center">
+                    <p class="price">$99 <br><span>/晚</span></p>
+                  </div>
+                </div>
+                <p class="features">
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 最适合旅行情侣</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 早餐包含在内</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 2张双人床</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 婴儿托管设施</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 免费WiFi</span>
+                </p>
+                <p><a href="yd.html" class="btn btn-primary">预订房间</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="room-wrap">
+              <a href="#" class="room-img" style="background-image: url(images/room-3.jpg);"></a>
+              <div class="text p-4">
+                <div class="d-flex mb-1">
+                  <div class="one-third">
+                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star-half-full"></span></p>
+                    <h3><a href="#">高级单人</a></h3>
+                  </div>
+                  <div class="one-forth text-center">
+                    <p class="price">$99 <br><span>/晚</span></p>
+                  </div>
+                </div>
+                <p class="features">
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 最适合旅行情侣</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 早餐包含在内</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 2张双人床</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 婴儿托管设施</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 免费WiFi</span>
+                </p>
+                <p><a href="yd.html" class="btn btn-primary">预订房间</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="room-wrap">
+              <a href="#" class="room-img" style="background-image: url(images/room-4.jpg);"></a>
+              <div class="text p-4">
+                <div class="d-flex mb-1">
+                  <div class="one-third">
+                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star"></span><span class="icon-star"></span><span
+                            class="icon-star-half-full"></span></p>
+                    <h3><a href="#">豪华总统套房</a></h3>
+                  </div>
+                  <div class="one-forth text-center">
+                    <p class="price">$99 <br><span>/晚</span></p>
+                  </div>
+                </div>
+                <p class="features">
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 最适合旅行情侣</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 早餐包含在内</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 2张双人床</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 婴儿托管设施</span>
+                  <span class="d-block mb-2"><i class="icon-check mr-2"></i> 免费WiFi</span>
+                </p>
+                <p><a href="yd.html" class="btn btn-primary">预定房间</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ftco-section-parallax">
+  <div class="parallax-img d-flex align-items-md-center align-items-sm-end"
+       style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row desc d-flex justify-content-center">
+        <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+          <span class="subheading">我们的会议室</span>
+          <h2 class="h1 font-weight-bold">会议中心</h2>
+          <p><a href="#" class="btn btn-primary btn-outline-white mt-3 py-3 px-4">查看更多细节</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <span class="subheading">我们的菜单</span>
+        <h2>餐厅 &amp; 酒吧</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 dish-menu">
+
+        <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist"
+             aria-orientation="vertical">
+          <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+             role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-tray"></span> Main</a>
+          <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+             aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-beer"></span> Dessert</a>
+          <a class="nav-link py-3 px-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+             role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="flaticon-cheers"></span>
+            Drinks</a>
+        </div>
+
+        <div class="tab-content py-5" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-3.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Grilled Beef with potatoes</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-4.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Fruit Vanilla Ice Cream</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-5.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Asian Hoisin Pork</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-6.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Spicy Fried Rice &amp; Bacon</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-7.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Mango Chili Chutney</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Savory Watercress Chinese Pancakes</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-9.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Soup With Vegetables And Meat</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-10.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Udon Noodles With Vegetables</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-11.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Baked Lobster With A Garnish</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Octopus with Vegetables</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- END -->
+
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-1.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Grilled Beef with potatoes</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-2.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Grilled Beef with potatoes</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-3.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Grilled Beef with potatoes</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-4.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Grilled Beef with potatoes</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-5.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Grilled Beef with potatoes</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-6.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Tiramisu</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-7.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Chocolate Cream</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-8.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Pizza Pie</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-9.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Sicilian Ricotta</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/dessert-10.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Mango FLoat</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- END -->
+
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-1.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Lemon Juice</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-2.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Guava Juice</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-3.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Sprite</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-4.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Cola</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-5.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Wine</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-6.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Beer</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-7.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Mango Juice</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-8.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Apple Juice</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-9.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Strawberry Juice</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="menus d-flex ftco-animate">
+                  <div class="menu-img" style="background-image: url(images/drink-10.jpg);"></div>
+                  <div class="text d-flex">
+                    <div class="one-half">
+                      <h3>Orange Juice</h3>
+                      <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                    </div>
+                    <div class="one-forth">
+                      <span class="price">$29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section testimony-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <span class="subheading">客人评论</span>
+        <h2>我们满意的客人评论</h2>
+      </div>
+    </div>
+    <div class="row ftco-animate">
+      <div class="col-md-12">
+        <div class="carousel owl-carousel ftco-owl">
+          <div class="item text-center">
+            <div class="testimony-wrap p-4 pb-5">
+              <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+              </div>
+              <div class="text">
+                <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                        class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                </p>
+                <p class="mb-5">在很远很远的地方，在单词“mountains”的后面，在离Vokalia和辅音字母国家很远很远的地方，住着盲文。</p>
+                <p class="name">丹尼斯绿色</p>
+                <span class="position">来自意大利的客人</span>
+              </div>
+            </div>
+          </div>
+          <div class="item text-center">
+            <div class="testimony-wrap p-4 pb-5">
+              <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+              </div>
+              <div class="text">
+                <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                        class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                </p>
+                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts.</p>
+                <p class="name">丹尼斯绿色</p>
+                <span class="position">来自意大利的客人</span>
+              </div>
+            </div>
+          </div>
+          <div class="item text-center">
+            <div class="testimony-wrap p-4 pb-5">
+              <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+              </div>
+              <div class="text">
+                <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                        class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                </p>
+                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts.</p>
+                <p class="name">Dennis Green</p>
+                <span class="position">Guests from Italy</span>
+              </div>
+            </div>
+          </div>
+          <div class="item text-center">
+            <div class="testimony-wrap p-4 pb-5">
+              <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+              </div>
+              <div class="text">
+                <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                        class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                </p>
+                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts.</p>
+                <p class="name">Dennis Green</p>
+                <span class="position">Guests from Italy</span>
+              </div>
+            </div>
+          </div>
+          <div class="item text-center">
+            <div class="testimony-wrap p-4 pb-5">
+              <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+              </div>
+              <div class="text">
+                <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span
+                        class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+                </p>
+                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts.</p>
+                <p class="name">Dennis Green</p>
+                <span class="position">Guests from Italy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <span class="subheading">博客</span>
+        <h2>最近的博客</h2>
+      </div>
+    </div>
+    <div class="row ftco-animate">
+      <div class="carousel1 owl-carousel ftco-owl">
+        <div class="item">
+          <div class="blog-entry">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
+            </a>
+            <div class="text p-4 d-block">
+              <h3 class="heading"><a href="#">即使是万能的指示也无法控制盲目的文本</a></h3>
+              <div class="meta">
+                <div><a href="#">July 12, 2018</a></div>
+                <div><a href="#">管理员</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="blog-entry" data-aos-delay="100">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
+            </a>
+            <div class="text p-4">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a>
+              </h3>
+              <div class="meta">
+                <div><a href="#">July 12, 2018</a></div>
+                <div><a href="#">Admin</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="blog-entry" data-aos-delay="200">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_7.jpg');">
+            </a>
+            <div class="text p-4">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a>
+              </h3>
+              <div class="meta">
+                <div><a href="#">July 12, 2018</a></div>
+                <div><a href="#">Admin</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="blog-entry" data-aos-delay="200">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_8.jpg');">
+            </a>
+            <div class="text p-4">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a>
+              </h3>
+              <div class="meta">
+                <div><a href="#">July 12, 2018</a></div>
+                <div><a href="#">Admin</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="blog-entry" data-aos-delay="200">
+            <a href="blog-single.html" class="block-20" >
+            </a>
+            <div class="text p-4">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a>
+              </h3>
+              <div class="meta">
+                <div><a href="#">July 12, 2018</a></div>
+                <div><a href="#">Admin</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container-fluid section-event">
+    <div class="row no-gutters justify-content-center mb-5 pb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <span class="subheading">加入活动</span>
+        <h2>我们的活动</h2>
+      </div>
+    </div>
+    <div class="row d-flex no-gutters">
+      <div class="col-md-6 event-big-img" style="background-image: url(images/event.jpg);"></div>
+      <div class="col-md-6 event-wrap">
+        <div class="event mb-5 ftco-animate">
+          <div class="text">
+            <p class="meta p-2 text-center">
+              <span class="day">12</span>
+              <span class="mos">July</span>
+              <span class="year">2018</span>
+            </p>
+            <h3><a href="event.html">夏天的聚会</a></h3>
+            <p>大远远的，在单词山的后面，在远离Vokalia和辅音的国家，那里住着盲目的短信聚会</p>
+            <p>
+              <a href="#" class="btn btn-primary">加入活动</a>
+              <a href="#" class="btn btn-primary btn-outline-primary">查看详细信息</a>
+            </p>
+          </div>
+        </div>
+        <div class="event mb-5 ftco-animate">
+          <div class="text">
+            <p class="meta p-2 text-center">
+              <span class="day">12</span>
+              <span class="mos">July</span>
+              <span class="year">2018</span>
+            </p>
+            <h3><a href="event.html">夏天的聚会</a></h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts</p>
+            <p>
+              <a href="#" class="btn btn-primary">加入活动</a>
+              <a href="#" class="btn btn-primary btn-outline-primary">查看详细信息</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="instagram">
+  <div class="container-fluid">
+    <div class="row no-gutters justify-content-center pb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <h2><span class="icon-weibo"></span> 新浪微博</h2>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-sm-12 col-md ftco-animate">
+        <a href="images/insta-1.jpg" class="insta-img image-popup" style="background-image: url(images/insta-1.jpg);">
+          <div class="icon d-flex justify-content-center">
+            <span class="icon-instagram align-self-center"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md ftco-animate">
+        <a href="images/insta-2.jpg" class="insta-img image-popup" style="background-image: url(images/insta-2.jpg);">
+          <div class="icon d-flex justify-content-center">
+            <span class="icon-instagram align-self-center"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md ftco-animate">
+        <a href="images/insta-3.jpg" class="insta-img image-popup" style="background-image: url(images/insta-3.jpg);">
+          <div class="icon d-flex justify-content-center">
+            <span class="icon-instagram align-self-center"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md ftco-animate">
+        <a href="images/insta-4.jpg" class="insta-img image-popup" style="background-image: url(images/insta-4.jpg);">
+          <div class="icon d-flex justify-content-center">
+            <span class="icon-instagram align-self-center"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md ftco-animate">
+        <a href="images/insta-5.jpg" class="insta-img image-popup" style="background-image: url(images/insta-5.jpg);">
+          <div class="icon d-flex justify-content-center">
+            <span class="icon-instagram align-self-center"></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">社交</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+            <li class="ftco-animate"><a href="#"><span class="icon-weibo"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-qq"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-weixin"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">营业时间</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block">星期一: <span>08: - 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期二: <span>08: - 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期三: <span>08: - 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期四: <span>08: - 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期五: <span>08: - 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期六: <span>08: - 22:00</span></a></li>
+            <li><a href="#" class="py-2 d-block">星期天: <span>08: - 22:00</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">联系方式</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a></li>
+            <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
+            <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
+            <li><a href="#" class="py-2 d-block">email@email.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">地址</h2>
+          <p>远离山脉，远离国家。</p>
+          <form action="#" class="subscribe-form">
+            <div class="form-group">
+              <span class="icon icon-paper-plane"></span>
+              <input type="text" class="form-control" placeholder="Subscribe">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+          <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+  <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+  <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+          stroke="#F96D00" /></svg></div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>-->
+<!--<script src="js/google-map.js"></script>-->
+<script src="js/main.js"></script>
+<script src="js/jquerysession.js"></script>
+<script src="js/verificatioLogin.js"></script>
+<script src="js/2.4/layer.js"></script>
+<script>
+    $(function () {
+
+        $("#username1").hide();
+
+        $("#button-login").click(function () {
+            if (!$("#clientAccount").val()) {
+                layer.msg('用户名不能为空', { icon: 2, time: 1500 })
+                return;
+            } else if (!$("#clientPwd").val()) {
+                layer.msg('密码不能为空', { icon: 2, time: 1500 })
+                return;
+            } else {
+
+
+                var clientPwd = $("#clientPwd").val()
+                var clientAccount = $("#clientAccount").val()
+                if (clientAccount != "") {
+                    $.session.set('clientAccount', clientAccount)
+                }
+
+                $.ajax({
+                    type: "post",
+                    url: "ClientServlet?action=Accountlogin",
+                    data: { clientAccount: clientAccount, clientPwd: clientPwd },
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.suc) {
+                            if ($.session.get('clientAccount') != null) {
+                                $("#username1").show();
+                                $("#cont").hide();
+                                $("#cont2").hide();
+                            }
+                            $("#username").text($.session.get('clientAccount'));
+
+
+                            setTimeout(function () {
+                                $("#span1").text("")
+                                //重置表单
+                                $("#empForm1").get(0).reset()
+                            }, 1000)
+                        } else {
+                            console.log(data.msg)
+                            setTimeout(function () {
+                                $("#span1").text("")
+                                //重置表单
+                                $("#empForm1").get(0).reset()
+                            }, 1000)
+                            $("#span1").text(data.msg).css("color", "red");
+
+                        }
+
+
+                    }
+                })
+
+            }
+        })
+
+
+        //短信验证码登陆
+        $("#button-login2").click(function () {
+
+            if (!$("#clientPhone").val()) {
+                layer.msg('手机号码不能为空', { icon: 2, time: 1500 })
+                return;
+            } else if (!$("#code").val()) {
+                layer.msg('验证码不能为空', { icon: 2, time: 1500 })
+                return;
+            } else {
+
+                var clientPhone= $("#clientPhone").val();
+                var code= $("#code").val();
+                if (clientPhone != "") {
+                    $.session.set('clientPhone', clientPhone)
+                }
+               if(code==codephone){
+                   $.ajax({
+                       type: "post",
+                       url: "ClientServlet?action=verificationlogin",
+                       dataType: "json",
+                       data: {clientPhone:clientPhone,code:code},
+                       success: function (data) {
+                           console.log(data)
+                           if(data.suc==""){
+                               $("#span3").css("color", "red");
+
+                           }else if(data.suc==true) {
+                               $("#span3").css("color", "green");
+                               $("#username1").show();
+                               $("#cont").hide();
+                               $("#cont2").hide();
+                               $("#username").text($.session.get('clientPhone'));
+                           }else{
+                               $("#span3").css("color", "red");
+                           }
+                           $("#span3").text(data.msg);
+                           setTimeout(function () {
+                               $("#span3").text("")
+                               //重置表单
+                               $("#empForm2").get(0).reset()
+                           }, 1000)
+
+                       }
+                   })
+               }
+
+
+            }
+        })
+//发送短信验证码
+        var codephone="";
+$("#codebuttno").click(function () {
+    if (!$("#clientPhone").val()) {
+        layer.msg('手机号码不能为空', { icon: 2, time: 1500 })
+        return;
+    }else{
+        var clientPhone=$("#clientPhone").val();
+        btnCheck();
+        $.ajax({
+            type: "post",
+            url: "ClientServlet?action=codelogin",
+            data: {clientPhone:clientPhone},
+            dataType: "json",
+            success: function (data) {
+
+
+                if(data.suc){
+                    codephone+=data.msg
+                }
+
+                console.log(codephone)
+            }
+        })
+
+    }
+
+})
+
+
+
+    })
+
+    function btnCheck() {
+
+        $("#codebuttno").addClass("on");
+        var time = 60;
+        $(this).attr("disabled", true);
+        var timer = setInterval(function () {
+            if (time == 0) {
+                clearInterval(timer);
+                $("#codebuttno").attr("disabled", false);
+                $("#codebuttno").val("获取验证码");
+                $("#codebuttno").removeClass("on");
+            } else {
+
+                $('#codebuttno').val("正在发送验证码：" + time + "秒");
+
+                time--;
+
+            }
+        }, 1000);
+    }
+
+</script>
+</body>
+
+</html>
