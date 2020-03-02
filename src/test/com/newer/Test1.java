@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class Test1 {
 
-    @Test
+   @Test
     public void test() {
         //获取数据库连接会话对象
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
